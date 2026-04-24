@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resumo 2</title>
+    </head>
+    <body>
+
+        <h1>Resumo 2.1</h1>
+        <p>fundamentos da linguagem HTML, destacando seu papel na definição da estrutura das páginas web.</p>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.1.1 Versões do HTML</h2>
+        <dl>
+
+            <dt>HTML</dt>
+            <dd>
+                A primeira versão, publicada em 1992 por Tim Berners-Lee, baseou-se em propostas criadas <br>
+                no CERN em 1989.
+            </dd>
+
+            <dt>HTML 4.0</dt>
+            <dd>
+                Lançada em 1997, foi um marco importante por viabilizar o uso de CSS para estilização.
+            </dd>
+
+            <dt>XHTML 1.0</dt>
+            <dd>
+                Reformulou o HTML com base nas regras do XML, exigindo uma sintaxe mais rígida, como <br>
+                atributos em letras minúsculas e sempre com valores.
+            </dd>
+
+            <dt>HTML5</dt>
+            <dd>
+                Lançada em 2014, substituiu as versões anteriores e introduziu novas funcionalidades e APIs da web.
+            </dd>
+            <dt>Living Standard</dt>
+            <dd>
+                Atualmente, o HTML é desenvolvido de forma contínua pelo WHATWG em colaboração com o W3C, <br> sendo tratado como uma especificação viva, sem números de versão fixos para novos desenvolvimentos.
+            </dd>
+        </dl>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.1.2 Using Elements and Attributes (Uso de Elementos e Atributos)</h2>
+        <p>
+            O HTML utiliza elementos e atributos para estruturar e dar significado (semântica) ao conteúdo.
+        </p>
+
+        <h3>Estrutura Básica</h3>
+        <p>
+            Um documento padrão inclui o Doctype (que especifica a versão), a tag html (que engloba <br>
+            todo o código), o head (para informações não visíveis, como o título da página) e o body <br>
+            (onde reside todo o conteúdo exibido pelo navegador).
+        </p>
+
+        <h3>Formatação e Cabeçalho</h3>
+        <p>
+            Utiliza-se tags como h1 e h2 para títulos, p para parágrafos, e i ou b para <br>
+            itálico e negrito, respectivamente. <br>
+        </p>
+
+
+
+        <h3>Elementos:</h3>
+        <p>
+            São compostos por uma tag de abertura e uma tag de fechamento (ex: h1 e /h1), com o <br>
+            conteúdo posicionado entre elas.
+        </p>
+
+        <h3>Atributos:</h3>
+        <p>
+            Fornecem informações adicionais aos elementos, sendo inseridos na tag de abertura no <br>
+            formato nome="valor" (ex: o atributo href no elemento <a> para definir o destino de um link).
+        </p>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.1.3 Saving Web Pages as HTML Documents (Salvando Documentos HTML)</h2>
+        <p>Os arquivos HTML são documentos de texto simples salvos com as extensões .html ou .htm.</p>
+
+        <p>
+            processo: Criação > Edição > Salvamento > Visualização no Navegador. <br>
+        </p>
+
+        <h3>Ferramentas de Desenvolvedor</h3>
+        <p>
+            A maioria dos navegadores, como o Chrome, oferece ferramentas integradas <br>
+            que permitem aos desenvolvedores inspecionar e analisar o código de uma <br>
+            página web diretamente.
+        </p>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+        <h1>Resumo 2.2</h1>
+        <p>
+            foca no aprendizado prático dos elementos HTML, seus atributos e onde podem ser utilizados no código.
+        </p>
+
+        <h2>2.2.1 Headings, Paragraphs, and Other Text Formatting (Cabeçalhos, Parágrafos e Outras Formatações de Texto)</h2>
+        <dl>
+            <dt><b>TITULOS:</b></dt>
+            <dd>
+                <p>O HTML oferece seis níveis de cabeçalhos, de h1 (maior/principal) <br>
+                a h6 (menor). <br>
+                Exemplo: <br>
+                </p>
+                <h1>H1</h1>
+                <h2>H2</h2>
+                <h3>H3</h3>
+                <h4>H4</h4>
+                <h5>H5</h5>
+                <h6>H6</h6>
+            </dd>
+
+            <dt><b>PARÁGRAFOS:</b></dt>
+            <dd>
+                <p>O elemento p é usado para criar parágrafos, que são blocos de texto separados por uma linha em branco. <br>
+                Exemplo: <br>
+                </p>
+                <p>Este é um parágrafo de exemplo.</p>
+            </dd>
+
+            <dt><b>FORMATAÇÃO DE TEXTO:</b></dt>
+            <dd>
+                <p>O HTML oferece várias tags para formatação de texto, como:</p>
+                <ul>
+                    <li><b>i</b> para <i>itálico</i></li>
+                    <li><b>b</b> para <b>negrito</b></li>
+                    <li><b>u</b> para <u>sublinhado</u></li>
+                    <li><b>strong</b> para <strong>ênfase forte</strong> (geralmente renderizado em negrito)</li>
+                    <li><b>em</b> para <em>ênfase</em> (geralmente renderizado em itálico)</li>
+                </ul>
+        </dl>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.2.2 Creating Lists (Listas)</h2>
+        <p>
+            O HTML suporta três tipos principais de listas: ordenadas, não ordenadas e de definição.
+        </p>
+
+        <ul>
+            <li>Ordenadas (ol): Listas numeradas que utilizam o elemento li para cada item</li>
+            <li>Não Ordenadas (ul): Listas que utilizam marcadores (pontos, quadrados, etc.) para cada item</li>
+            <li>De Definição (dl): Listas que associam termos com suas definições</li>
+        </ul>
+
+        <h3>Exemplos:</h3>
+
+        <dl>
+            <dt><b>Ordenadas:</b></dt>
+            <dd>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </dd>
+
+            <dt><b>Não Ordenadas:</b></dt>
+            <dd>
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B</li>
+                    <li>Item C</li>
+                </ul>
+            </dd>
+
+            <dt><b>De Definição:</b></dt>
+            <dd>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                </dl>
+            </dd>
+        </dl>
+        
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.2.3 Defining Links (Links)</h2>
+        <p>links são criados usando a tag a (âncora) com o atributo href para especificar o destino do link. </p>
+        <p>exemplo:</p>
+        <a href="https://www.example.com">Visite o Example.com</a>
+
+        <p>podem ser representados com os seguintes atributos:</p>
+        <ul>
+            <li><b>href:</b> Especifica o URL de destino do link</li>
+            <li><b>target:</b> Define onde o link será aberto (ex: _blank para nova aba)</li>
+            <li><b>title:</b> Fornece informações adicionais sobre o link, exibidas como tooltip</li>
+        </ul>
+
+        <h3>Exemplos:</h3>
+        
+        <dl>
+            <dt>Externo</dt>
+            <dd>
+                <a href="https://www.example.com" target="_blank">Example.com</a>
+                <p>
+                    Link para um site externo (usa target="_blank", e href) <br>
+                    (target="_blank" é opcional, mas recomendado para links externos para abrir em nova aba)
+                </p>
+            </dd>
+
+            <dt>Relativo</dt>
+            <dd>
+                <a href="pagina.html">Link para uma página interna</a>
+                <p>
+                    Link para uma página dentro do mesmo site (usa apenas o nome do arquivo)
+                </p>
+            </dd>
+
+            <dt>interno (âncora)</dt>
+            <dd>
+                <a href="#secao1">Link para uma seção interna</a>
+                <p>
+                    Link para uma seção específica dentro da mesma página <br>
+                    (usa o atributo href com um valor que começa com #) 
+                    (toda tag pode ter um id, e o link para essa tag é feito <br>
+                    usando # seguido do valor do id)
+                </p>
+            </dd>
+
+            <dt>Alvos</dt>
+            <dd>
+                <a href="#alvo1">Link para um alvo específico</a>
+                <p>
+                    Link para um elemento específico dentro da mesma página <br>
+                    (usa o atributo href com um valor que começa com #) 
+                </p>
+            </dd>
+        </dl>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.2.4 Including Images (Imagens)</h2>
+        <p>
+            Imagens são inseridas usando a tag img, que é um elemento vazio (não tem <br>
+            tag de fechamento) e requer o atributo src para especificar o caminho da imagem.
+        </p>
+
+        <ul>
+            <li>inserção: O elemento img é usado para exibir imagens via atributo src</li>
+            <li>
+                acessibilidade:  O atributo alt é essencial para fornecer um texto <br>
+                alternativo para leitores de tela ou caso a imagem não carregue
+            </li>
+            <li>
+                Legendas: A tag figure pode ser usada para agrupar uma imagem e sua legenda, <br>
+                com a legenda definida dentro da tag figcaption
+            </li>
+        </ul>
+
+        <h3>Exemplo:</h3>
+
+        <h4>Imagem</h4>
+        <img src="src/image.jpg" alt="Descrição da imagem">
+
+        <h4>Figura com Legenda</h4>
+        <figure>
+            <img src="src/image.jpg" alt="Descrição da imagem">
+            <figcaption>Legenda da imagem</figcaption>
+        </figure>
+
+        <h4>Imagem com Tooltip</h4>
+        <img src="src/image.jpg" alt="Descrição da imagem" title="Tooltip da imagem">
+
+        <h4>URL quebrado</h4>
+        <img src="src/imagem_inexistente.jpg" alt="Imagem não encontrada">
+
+        <p>
+            O atributo src pode apontar para uma imagem local (caminho relativo) ou para uma <br>
+            imagem hospedada online (URL absoluta).
+        </p>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.2.5 Structure Data in Tables</h2>
+        <p>
+            Tabelas são criadas usando a tag table, com linhas definidas por tr, cabeçalhos por <br>
+            th e células por td.
+        </p>
+
+        <ul>
+            <li>
+                Estrutura Basica: As tabelas utilizam table, com linhas definidas por tr e  <br>
+                células por td (dados) ou th (cabeçalhos).
+            </li>
+
+            <li>
+                Organização: para tabelas longas e recomendado usar o elemento thead para  <br>
+                definir o cabeçalho da tabela tbody para o corpo da tabela e tfoot para o rodapé.
+            </li>
+
+            <li>
+                Mesclagem de Células: O atributo colspan permite que uma célula se estenda por várias colunas, <br>
+                enquanto rowspan permite que se estenda por várias linhas.
+            </li>
+        </ul>
+
+        <h3>Exemplo:</h3>
+        <h4>Tabela Simples</h4>
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        <h4>Tabela com Cabeçalho e Rodapé</h4>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>55</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>Não muda muito a tábela em si mas sim a organização dos dados.</p>
+
+        <h4>colspan</h4>
+        <table border="1">
+            <tr>
+                <th colspan="2">Informações Pessoais</th>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td>Alice</td>
+            </tr>
+            <tr>
+                <td>Idade</td>
+                <td>30</td>
+            </tr>
+        </table>
+
+        <h4>rowspan</h4>
+        <table border="1">
+            <tr>
+                <th rowspan="2">Nome</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.2.6 Definig Forms (Formulários)</h2>
+        <p>
+            Formulários são criados usando a tag form, que pode conter diversos tipos de campos de entrada, <br>
+            como text, password, checkbox, radio, submit, entre outros.
+        </p>
+
+        <h3><b>Base:</b></h3>
+        <p>
+            O elemento form é usado para criar um formulário, com o atributo action para especificar o destino <br>
+            dos dados e method para definir o método de envio (GET ou POST).
+        </p>
+
+        <h3><b>Campos de Entrada:</b></h3>
+        <p>
+            O HTML oferece uma variedade de tipos de campos de entrada, como:
+            <ul>
+                <li><b>text:</b> Campo de texto para entrada de dados</li>
+                <li><b>password:</b> Campo de senha que oculta a entrada</li>
+                <li><b>checkbox:</b> Caixa de seleção para opções múltiplas</li>
+                <li><b>radio:</b> Botão de opção para seleção única</li>
+                <li><b>submit:</b> Botão para enviar o formulário</li>
+            </ul>
+        </p>
+
+        <h3>Outros elementos</h3>
+        <p>
+            Incluem select para listas suspensas, textarea para textos longos, e label para rotular <br>
+            campos, melhorando a acessibilidade.
+        </p>
+
+        <h4>Exemplo:</h4>
+        <form action="/submit" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="subscribe">checkbox:</label>
+            <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+        </form>
+        <p>
+            aqui são usados labels para rotular os campos do formulário <br>
+            input para criar campos de entrada no formulário <br>
+            e os types de input: <br>
+            text: Campo de texto para entrada de dados <br>
+            password: Campo de senha que oculta a entrada <br>
+            checkbox: Caixa de seleção para opções múltiplas <br>
+        </p>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.2.7 Further Information (Links)</h2>
+        <p>
+            dos elementos apresentados, podem ser descritos em bloco (como h1 e p) e inline (como a e img), dependendo de como <br>
+            eles afetam o fluxo do documento. 
+        </p>
+
+        <ul>
+            <li>elementos em bloco (como h1 e p) quebram linhas</li>
+            <li>elementos inline (como a e img) não quebram linhas</li>
+        </ul>
+
+        <p>Utiliza-se div para agrupar elementos em bloco e <br>
+            span para agrupar elementos inline.
+        </p>
+
+        <p>------------------------------------------------------------------------------------------------------------------------------</p>
+
+        <h2>2.3 Summary and Outlook</h2>
+        <p>
+            encerra o capítulo recapitulando os conceitos fundamentais do HTML discutidos anteriormente.
+        </p>
+
+        <h3>2.3.1 Key points (pontos principais)</h3>
+
+        <h4>Definição:</h4>
+        <p>
+            O HTML é uma linguagem de marcação usada para definir a estrutura e a semântica das páginas web através de elementos.
+        </p>
+
+        <h4>Sintaxe:</h4>
+        <p>
+            Os elementos HTML consistem em uma tag de abertura e uma de fechamento.
+        </p>
+
+        <h4>Atributos:</h4>
+        <p>
+            Informações adicionais podem ser passadas nas tags de abertura por meio de atributos, que são compostos por um nome e <br>
+            um valor associado.
+        </p>
+
+        <h4>Tipos de Elementos:</h4>
+        <p>
+            Existem elementos que podem conter outros (elementos filhos) ou texto, e elementos vazios, que não podem conter texto <br>
+            nem outros elementos.
+        </p>
+
+        <p>
+            apartir desses conceitos básicos, o HTML oferece uma ampla variedade de elementos e atributos que permitem criar páginas web ricas e estruturadas, <br>
+            e a compreensão desses fundamentos é essencial para o desenvolvimento web. <br>
+
+            o texto recomenda algumas leitura e fala sobre as paginas não serem atraentes, <br>
+            mas que isso pode mudar com o uso de CSS para estilização, que é o assunto do próximo capítulo créio eu.
+        </p>
+
+    </body>
+</html>
