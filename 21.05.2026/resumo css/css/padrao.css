@@ -1,0 +1,57 @@
+body {
+	background-color: #2b2b2b;
+	color: yellow;
+	font-family: Arial;
+}
+
+h1{
+	text-align: center;
+	padding: 10px;
+	border: black solid 2px;
+}
+
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+b {
+	color: orange;
+}
+
+pre {
+	background-color: #000;
+	color: green;
+	padding: 1em; /*em: unidades de tamanho relativas à fonte */
+	overflow: auto; /* Adiciona uma barra de rolagem se o conteúdo for maior que a área do pre */
+	border-radius: 4px; /* arredonda os cantos do bloco de código */
+	white-space: pre; /* pre preserva os espaços em branco e as quebras de linha */
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+pre code{
+	background: transparent;
+	color: inherit; /*herda a cor do elemento pai, que é o pre */
+	font-family: "Courier New", Courier, monospace;
+	display: block; /* Garante que o código seja exibido em bloco, ocupando toda a largura disponível */
+}
+
+button {
+
+	background-color: orange;
+	color: black;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 16px;
+	margin: 20px 10px 0 0;
+	cursor: pointer; /* Faz a mãozinha */
+	/* alinha os 2 botões na vertical */
+	
+}
+
+button:hover {	
+	background-color: #00ff0d;
+}

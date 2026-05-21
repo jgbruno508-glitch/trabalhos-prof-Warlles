@@ -1,0 +1,132 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Resumo de css</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<h1>3 Desing de Paginas Web</h1>
+
+	<p class="resumo">
+		Você pode influenciar a aparência das páginas da web usando a linguagem de estilo Cascading Style 		Sheets (CSS).
+	<p>
+	<br>
+	<p>
+		<tab> O <b>css</b> é uma linguagem utilizada para criar certos comportamentos do dos elementos <b>		html</b> utilizando atributos das tags (<b>id e class</b>), além de funcionar também diretamente 		referenciando as <b>tags</b>. O css serve para <b>determina fontes</b>, cores de texto fundo e etc.
+	<p>
+
+	<p>
+		Você pode influenciar a aparência de <b>listas</b>, elementos de <b>formulário</b> e <b>tabelas</b>, 		por exemplo, definindo os marcadores em uma lista ou determinando a cor de fundo de células 			individuais da tabela. Como no exemplo abaixo:
+	</p>
+	<img src="img/image1.png" alt="imagen não encontrada" id="image1">
+
+	<h1>3.1 Estrutura</h1>
+
+	<p>
+		A estrutura base do css usa o seguinte estilo:
+	</p>
+
+	<img src="img/image2.png" alt="imagen não encontrada" id="image2">
+	
+	<ul>
+		<li><b>Selector</b> (seletor): e como ele captura as tags do <b>html</b> para modifica-las pode ser por meio do atributo <b>classes</b>, por meio do atributo <b>id</b>, ou pelo nome da própria <b>tag</b>. </li>
+		<li><b>Delacartion</b> (declaração): a declaração e composta por uma propriedade, e o valor dessa propriedade que diz "oque mudar" (prodriedade) e "para que mudar" (valor) toda declaração deve ser finalizada com ;. </li>
+		<li><b>Property</b> (propriedade): existem diversos tipos de propriedades elas definem o que vai mudar no que estiver dentro daquela classe, id ou tag.
+		<li><b>Value</b> (valor): o valor é o que será atribuido aquele seletor exemplo "backgroundColor: black" tem o valor de preto mudando o fundo do seletor para preto, mas os valores variam de acordo com o tipo de propriedade, algumas são <b>multivaloradas</b>.</li>
+	</ul>
+
+	<h1>3.1.2 incluindo CSS ao HTML</h1>
+	<h4>
+		O css pode ser incluido no html de algumas formas dentre elas podemos citar:
+	</h4>
+	
+	<ul>
+		<li><b>Externo</b>: o css externo se refere a quando o css está separado em um arquivo de texto proprio com a terminação arquivo.css </li>
+		</li>
+		<li><b>Interno</b>: aqui o css e definido no proprio cabeçalho da pagina html dentro da tag <b>&lt;style&gt;</b> </li>
+		<li><b>Inline</b>: aqui você define o css dentro das tags como atributos.</li>
+	</ul>
+
+	<p>
+		Para incluir um arquivo <b>CSS</b> a um arquivo <b>HTML</b> basta citar o local do arquivo CSS no arquivo HTML por meio da tag <b>&lt;link&gt;</b> colocada dentro da tag <b>&lt;head&gt;</b> a esturutura segue a seguinte sintaxe:
+		<pre><code>&lt;link href="local do arquivo css" type="text/css" rel="stylesheet""&gt;</code></pre> esse é o padrão embora o atributo <b>type</b> não seja muito utilizado
+	</p>
+
+	<h1>3.1.3 Cascata</h1>
+	<p>
+		Quando mais de uma regra CSS se aplica ao mesmo elemento, o navegador usa o princípio da <b>cascata</b> para decidir qual delas vai prevalecer. Em geral, quando duas regras têm o mesmo peso, a última definida no código tem prioridade.
+	</p>
+
+	<p>
+		No exemplo abaixo, a cor do <b>h1</b> muda para <b>verde</b> porque a segunda regra aparece depois da primeira, mas o fundo continua <b>amarelo</b>, pois essa propriedade não foi sobrescrita.
+	</p>
+
+	<pre><code>
+h1 {
+	color: blue;
+	background-color: yellow;
+}
+
+h1 {
+	color: green;
+}
+	</code></pre>
+
+	<h1>3.1.4 Seletores</h1>
+	<p>
+		Os seletores podem ser combinados entre si e também podem selecionar elementos por <b>classe</b> e por <b>atributos</b>. Isso permite criar regras mais específicas para partes diferentes da página.
+	</p>
+
+	<ul>
+		<li><b>Combinação de seletores</b>: você pode montar regras mais detalhadas para atingir elementos específicos, como títulos, links ou campos de formulário.</li>
+		<li><b>Seletor de classe</b>: seleciona elementos com base no valor do atributo <b>class</b>, por exemplo <b>.valid</b> ou <b>a.valid</b>.</li>
+		<li><b>Seletores de atributo</b>: selecionam elementos a partir do conteúdo de um atributo, como <b>[attribute=value]</b>, <b>[attribute~=value]</b>, <b>[attribute|=value]</b>, <b>[attribute^=value]</b>, <b>[attribute$=value]</b> e <b>[attribute*=value]</b>.</li>
+	</ul>
+
+	<p>
+		Exemplos de seletores de classe e atributo:
+	</p>
+
+	<pre><code>
+.valid {
+	color: green;
+}
+
+a.valid {
+color: green;
+}
+
+input[type="text"] {
+	border: 1px solid yellow;
+}
+	</code></pre>
+
+	<h1>3.1.5 Herança</h1>
+	<p>
+		Alguns valores definidos em regras CSS para elementos pai são <b>herdados</b> pelos elementos filhos. Por exemplo, se você definir a cor e a fonte de um elemento, os elementos dentro dele também podem receber esses mesmos estilos, a menos que outra regra seja aplicada diretamente.
+	</p>
+
+	<p>
+		Algumas propriedades, como as usadas para definir <b>borda</b>, normalmente não são herdadas. Se isso acontecesse, o efeito poderia se espalhar para elementos que não deveriam receber aquele estilo.
+	</p>
+
+	<pre><code>
+body {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2 {
+	font-family: Arial, sans-serif;
+}
+
+.author {
+	font-family: Verdana;
+	line-height: 0.3em;
+	text-align: right;
+}
+	</code></pre>
+
+	<a href="cap3.2.html"><button>Próxima Parte</button></a>
+	
+</body>
+</html>

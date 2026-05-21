@@ -1,0 +1,196 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Resumo Capítulo 3.2 - Aplicando Cores e Formatação de Texto</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>3.2 Aplicando Cores e Formatação de Texto</h1>
+
+    <p class="resumo">
+        Este resumo apresenta as ideias principais do Capítulo 3.2 sobre como aplicar cores, fontes e formatação de texto com CSS.
+    </p>
+
+    <h1>3.2.1 Cores</h1>
+    <p>
+        O CSS permite definir cores de diversas maneiras: palavras-chave (por exemplo <b>yellow</b>), valores RGB/RGBA, e HSL/HSLA. O canal alfa (no RGBA/HSLA) controla a opacidade e vai de <b>0.0</b> até <b>1.0</b>.
+    </p>
+
+    <p>
+        As cores nomeadas são úteis para começar, mas os formatos numéricos dão mais controle. <b>RGB</b> define vermelho, verde e azul; <b>RGBA</b> acrescenta transparência; <b>HSL</b> trabalha com matiz, saturação e luminosidade; e <b>HSLA</b> também inclui transparência.
+    </p>
+
+    <p>
+        Exemplos de valores de cor: <b>rgba(255,255,0,0.5)</b>, <b>rgb(255, 0, 0)</b>, <b>hsl(60,100%,50%)</b> e <b>hsla(60,100%,50%,0.5)</b>. Use HSL quando quiser ajustar o tom da cor de forma mais intuitiva.
+    </p>
+
+    <pre><code>
+h1 {
+    color: darkblue;
+    background-color: yellow;
+}
+
+.destaque {
+    color: rgba(255, 0, 0, 0.7);
+}
+</code></pre>
+
+    <p>
+        Um uso comum é destacar títulos com fundo colorido e deixar trechos importantes com uma cor mais chamativa. A escolha da cor também deve considerar contraste para facilitar a leitura.
+    </p>
+
+    <h1>3.2.2 Projetando textos</h1>
+    <p>
+        CSS controla a aparência do texto: família de fontes (<b>font-family</b>), estilo (<b>font-style</b>), peso (<b>font-weight</b>), tamanho (<b>font-size</b>) e espaçamentos entre letras e palavras.
+    </p>
+
+    <p>
+        Para fontes, prefira conjuntos alternativos e forneça <b>fallback</b>: por exemplo <b>'Times New Roman', Times, serif</b> ou <b>Arial, sans-serif</b>. Evite fontes decorativas para textos longos, porque elas cansam a leitura.
+    </p>
+
+    <p>
+        O texto também pode ser alinhado, recuado e espaçado com propriedades como <b>text-align</b>, <b>text-indent</b>, <b>line-height</b>, <b>word-spacing</b> e <b>letter-spacing</b>.
+    </p>
+
+    <pre><code>
+p {
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.4;
+}
+</code></pre>
+
+    <p>
+        Esse tipo de configuração deixa o texto mais organizado e legível, principalmente em parágrafos longos e em páginas com muito conteúdo.
+    </p>
+
+    <h1>3.2.3 Estilo e peso</h1>
+    <p>
+        A propriedade <b>font-style</b> aceita valores como <b>normal</b>, <b>italic</b> e <b>oblique</b>. Já <b>font-weight</b> controla a espessura do texto, podendo usar <b>normal</b>, <b>bold</b> ou valores numéricos como <b>400</b> e <b>700</b>.
+    </p>
+
+    <p>
+        <b>Italic</b> é uma fonte inclinada de verdade, enquanto <b>oblique</b> costuma ser uma inclinação simulada. Na prática, os dois servem para dar destaque ao texto, mas o uso deve ser moderado.
+    </p>
+
+    <pre><code>
+.introducao {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.autor {
+    font-style: normal;
+    font-weight: 700;
+}
+</code></pre>
+
+    <p>
+        Esse recurso é útil para criar ênfase, títulos secundários, legendas e trechos assinados sem precisar alterar a estrutura do HTML.
+    </p>
+
+    <h1>3.2.4 Tamanhos de fonte</h1>
+    <p>
+        Fontes podem ser especificadas em pixels (<b>px</b>), percentuais (%) ou unidades relativas como <b>em</b>. <b>px</b> é absoluto; <b>em</b> e porcentagens são relativas e úteis para acessibilidade e adaptação de layout.
+    </p>
+
+    <p>
+        O valor em <b>em</b> costuma ser baseado no tamanho da fonte do elemento pai. Assim, quando um texto precisa acompanhar o restante da página, unidades relativas ajudam bastante.
+    </p>
+
+<pre><code>
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 100%;
+}
+</code></pre>
+
+    <p>
+        Uma boa prática é evitar tamanhos muito pequenos e testar o resultado em diferentes telas para manter a leitura confortável.
+    </p>
+
+    <h1>3.2.5 Pseudo-classes e pseudo-elementos</h1>
+    <p>
+        O capítulo mostra pseudo-classes úteis para links e seleção de texto (<b>:hover</b>, <b>:active</b>, <b>:focus</b>) e pseudo-elementos como <b>::first-line</b> e <b>::selection</b> para estilizar partes específicas do conteúdo.
+    </p>
+
+    <p>
+        Pseudo-classes representam estados de um elemento, como quando o mouse passa por cima ou quando um campo recebe foco. Pseudo-elementos, por outro lado, permitem estilizar partes internas do conteúdo, como a primeira linha de um parágrafo.
+    </p>
+
+    <p>
+        A propriedade <b>text-transform</b> também aparece no capítulo para alterar a forma visual do texto. Os valores mais usados são:
+    </p>
+
+    <ul>
+        <li><b>uppercase</b>: transforma todo o texto em letras maiúsculas.</li>
+        <li><b>lowercase</b>: transforma todo o texto em letras minúsculas.</li>
+        <li><b>capitalize</b>: deixa a primeira letra de cada palavra em maiúscula.</li>
+        <li><b>none</b>: mantém o texto como foi escrito no HTML.</li>
+    </ul>
+
+    <pre><code>
+a:hover {
+    color: red;
+}
+
+a:focus {
+    color: orange;
+}
+
+p::first-line {
+    text-transform: uppercase;
+}
+
+p.capitalizado {
+    text-transform: capitalize;
+}
+
+p::selection {
+    background-color: yellow;
+}
+</code></pre>
+
+    <p>
+        Esses recursos deixam a interface mais interativa e ajudam a destacar ações do usuário e trechos importantes do texto.
+    </p>
+
+    <h1>3.2.6 Exemplo e boas práticas</h1>
+    <p>
+        Combine regras com cuidado para evitar conflitos: defina uma hierarquia de fontes, prefira arquivos CSS externos para reaproveitamento e use ferramentas de desenvolvedor para inspecionar regras aplicadas.
+    </p>
+
+    <p>
+        No capítulo, o exemplo final mostra como o mesmo conteúdo muda visualmente quando recebe estilos de cor, fonte, peso, espaçamento e pseudo-classes. Isso ajuda a perceber que CSS não altera só a aparência, mas também a organização visual da informação.
+    </p>
+
+    <pre><code>
+/* Exemplo simples */
+body { 
+    font-family: 'Times New Roman', Times, serif; 
+}
+h1 { 
+    color: green; background-color: yellow; 
+}
+p { 
+    line-height: 1.4; 
+}
+a:hover { 
+    color: red; 
+}
+    </code></pre>
+
+    <a href="index.html"><button>Voltar</button></a>
+    <a href="cap3.3.html"><button>Próxima Parte</button></a>
+
+</body>
+</html>
+ 

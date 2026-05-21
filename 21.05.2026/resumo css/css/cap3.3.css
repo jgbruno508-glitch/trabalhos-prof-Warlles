@@ -1,0 +1,48 @@
+/* estilos para listas personalizadas */
+ul.custom {
+    list-style-image: url('../img/fogo.png');
+}
+/* lista horizontal */
+ul.horizontal {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.horizontal li {
+    display: inline-block;
+    margin-right: 1em;
+    padding: 0;
+}
+
+/* usar números romanos */
+ol.web-technologies {
+    list-style-type: lower-roman;
+}
+
+/* Estilos para a tabela de demonstração */
+table.demo {
+    width: 100%;
+    border-collapse: collapse; /* remove espaçamento entre bordas */
+    table-layout: auto; /* ou fixed para larguras fixas */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+}
+
+/* zebra striping */
+/* zebra striping: aplicar às linhas do corpo da tabela (alternar linhas 1,3,...) */
+table.demo tbody tr:nth-child(odd) {
+    background-color: #000000;
+}
+
+thead tr {
+	background-color: #062912;
+}
